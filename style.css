@@ -2,3 +2,69 @@ body {
     margin: 0;
     background-color: aqua;
 }
+
+footer, h1, h2 {
+    font-family: 'DM Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loader img {
+    width: 20%;
+    height: auto;
+}
+
+.wrapper {
+    display: none;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    margin-bottom: -4.5rem;
+}
+
+.wrapper img {
+    width: 20%;
+    height: auto;
+}
+
+footer {
+    height: 4.5rem;
+    background-color: #050505;
+    font-size: 1.75rem;
+    color:#fcfcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 3rem; */
+}
+
+footer a {
+    text-decoration: none;
+    color: #fcfcfc;
+    
+    transition: color .3s ease;
+
+}
+
+footer a:hover {
+    color: blueviolet;
+}
+
+@media screen and (max-width: 375px) {
+    .wrapper img, .loader img {
+        width: 70%;
+        height: auto;
+    }
+}
+
+h1 {
+    padding: 2rem;
+}
